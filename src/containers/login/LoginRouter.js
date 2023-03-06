@@ -1,9 +1,9 @@
-import { Login } from "../../components/login/LoginPage";
-// import { Login } from "../../components/login/views/LoginPage";
+// import { Login } from "../../components/login/LoginPage";
+import { Login } from "../../components/login/views/LoginPage";
 
 const LoginRouter = [
   {
-    path: "/",
+    path: "/login",
     name: "Đăng nhập",
     element: <Login />,
   },
