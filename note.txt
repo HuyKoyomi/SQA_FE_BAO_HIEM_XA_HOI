@@ -10,12 +10,14 @@ Các câu lệnh
     + axios // thao tác API
     + react-router-dom - version (5.2.0) // điều hướng
     + dotenv // sử dụng biến môi trường
+    + loglevel
+    + loglevel-plugin-prefix
+    + moment
+    + classnames
+    + lodash
 
 
 // Một số thư viện chưa biết
-classnames
-moment
-
 
 //You can now view sqa_fe_code_2023 in the browser.
 
