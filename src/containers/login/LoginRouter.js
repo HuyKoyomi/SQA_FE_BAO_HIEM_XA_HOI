@@ -1,16 +1,16 @@
-// import { Login } from "../../components/login/LoginPage";
+import { HomePage } from "../../components/home/views/HomePage";
 import { Login } from "../../components/login/views/LoginPage";
 
 const LoginRouter = [
   {
-    path: "/login",
+    path: "/",
     name: "Đăng nhập",
     element: <Login />,
   },
   {
-    path: "/hello",
-    name: "Đăng nhập",
-    element: <Login />,
+    path: "/home",
+    name: "Hệ thống",
+    element: <HomePage />,
   },
 ];
 

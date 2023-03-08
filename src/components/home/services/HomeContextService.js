@@ -3,12 +3,12 @@ import { useDispatch, useStore } from "../../../core/store/store";
 // import { useDispatch, useStore } from 'core/store/store';
 import {
   createContext,
-  LoginContext,
+  HomePageContext,
   LoginActionList,
-} from "../contexts/LoginContext";
+} from "../contexts/HomeContext";
 
-function useA00ContextService() {
-  const context = useStore()[LoginContext];
+function HomePageContextService() {
+  const context = useStore()[HomePageContext];
   const dispatcher = useDispatch();
 
   const initContext = (data) => {
@@ -16,14 +16,14 @@ function useA00ContextService() {
   };
   const updateContext = (data) => {
     dispatcher({
-      slice: LoginContext,
+      slice: HomePageContext,
       type: LoginActionList.UpdateContext,
       data: data,
     });
   };
   const resetContext = () => {
     dispatcher({
-      slice: LoginContext,
+      slice: HomePageContext,
       type: LoginActionList.ResetContext,
     });
   };
@@ -36,4 +36,4 @@ function useA00ContextService() {
   return [context, dispatchInterface.current];
 }
 
-export default useA00ContextService;
+export default HomePageContextService;
