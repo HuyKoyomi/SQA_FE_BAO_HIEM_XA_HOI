@@ -51,6 +51,9 @@ export default function SearchForm({ context, domain }) {
     let values = form.getFieldsValue(true);
     console.log("form", values);
   };
+  const resetForm = async () => {
+    form.resetFields();
+  };
   return (
     <Form
       labelCol={{ span: 4 }}
@@ -70,9 +73,10 @@ export default function SearchForm({ context, domain }) {
         }}
         title={"Xem danh sách theo khu vực"}
         actions={[
-          <Button htmlType="submit" onClick={logForm}>
+          <Button htmlType="submit" onClick={logForm} type="primary">
             Tìm kiếm
           </Button>,
+          <Button onClick={resetForm}>Làm mới</Button>,
         ]}
       >
         <Form.Item

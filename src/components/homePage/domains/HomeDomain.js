@@ -5,6 +5,8 @@ import _ from "lodash";
 import { AxiosAPI } from "../../../core/common/AxiosAPI";
 import UseCommon from "../../../core/hooks/UseCommon";
 
+// https://caodem.com/codex/codex-html-css/bo-loc-select-tinh-thanh-quan-huyen-su-dung-api-provinces-open-api-vn/
+
 export function HomeDoamin() {
   const [context, contextService] = HomePageContextService();
   const contextRef = useRef(context);

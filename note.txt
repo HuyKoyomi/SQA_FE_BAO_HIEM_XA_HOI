@@ -15,6 +15,7 @@ Các câu lệnh
     + moment
     + classnames
     + lodash
+    + @ant-design/icons
 
 
 // Một số thư viện chưa biết
